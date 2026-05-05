@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме Джей Джея: Senior Good Boy 🐾</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Nunito:wght@400;800;900&display=swap');
+        
+        body { 
+            font-family: 'Nunito', sans-serif; 
+            background-color: #fff0f3; 
+            background-image: url('https://www.transparenttextures.com/patterns/paws.png');
+            color: #5d4037;
+        }
+
+        h1, h2, h3 { font-family: 'Comfortaa', cursive; font-weight: 700; }
+        .pink-glow { color: #ff85a1; text-shadow: 1px 1px 0px #ffffff; }
+
+        .resume-card {
+            background: rgba(255, 255, 255, 0.95);
+            border: 3px solid #ffccd5;
+            border-radius: 40px;
+            box-shadow: 0 15px 30px rgba(255, 179, 193, 0.2);
+            position: relative;
+        }
+
+        .skill-bar-bg { background: #ffe5ec; border-radius: 10px; height: 12px; width: 100%; }
+        .skill-bar-fill { background: #ff85a1; border-radius: 10px; height: 12px; }
+
+        .photo-frame {
+            border: 6px solid white;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+            transform: rotate(-1deg);
+            transition: transform 0.3s ease;
+        }
+        .photo-frame:hover { transform: rotate(0deg) scale(1.02); }
+
+        .experience-media-frame {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 24px;
+            display: block;
+        }
+
+        .btn-action {
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            z-index: 50;
+        }
+        .btn-action:hover { transform: scale(1.1); }
+    </style>
+</head>
+<body class="py-10 px-4">
+
+    <header class="max-w-4xl mx-auto text-center mb-12">
+        <h1 class="text-6xl font-black pink-glow mb-2">Джей Джей</h1>
+        <p class="text-xl text-pink-400 font-bold uppercase tracking-tighter">Кандидат на должность «Главного Любимца Семьи»</p>
+    </header>
+
+    <main class="max-w-5xl mx-auto space-y-10">
+
+        <!-- Профиль -->
+        <section class="resume-card p-8 flex flex-col md:flex-row gap-8 items-center">
+            <div class="relative">
+                <img src="1.jpg" class="photo-frame w-full md:w-64 rounded-2xl" alt="Джей Джей">
+            </div>
+            <div class="flex-1">
+                <h2 class="text-3xl pink-glow mb-4">Профессиональный профиль 📋</h2>
+                <p class="text-lg leading-relaxed">
+                    Высококвалифицированный джек-рассел с многолетним опытом в сфере антистресса и бытового уюта.
+                    Мастерски владею техниками «тыгыдык» и «преданный взгляд».
+                    Обладаю талантом находить лопухи даже в бетонных джунглях.
+                </p>
+            </div>
+        </section>
+
+        <!-- Навыки -->
+        <section class="resume-card p-8">
+            <h2 class="text-3xl pink-glow mb-8 text-center">Технические навыки 🛠️</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+                <div>
+                    <div class="flex justify-between mb-2 font-bold"><span>Скорость поедания яблок</span><span>100%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 100%"></div></div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2 font-bold"><span>Мастерство маскировки</span><span>95%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%"></div></div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2 font-bold"><span>Стойка на передних лапах</span><span>90%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%"></div></div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2 font-bold"><span>Игнорирование команды «фу»</span><span>140%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 100%; background: #ff4d6d;"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Опыт работы -->
+        <section class="resume-card p-8">
+            <h2 class="text-3xl pink-glow mb-6">Опыт работы 💼</h2>
+            <div class="space-y-12">
+                <div class="border-l-4 border-pink-200 pl-6 space-y-4">
+                    <h3 class="text-xl font-bold text-pink-500">Старший инженер по снегу</h3>
+                    <p class="text-md">Успешно реализовал проект по созданию снежных ангелов в тандеме с человеком.</p>
+                    <img src="2.jpg" class="experience-media-frame photo-frame" alt="Снежные ангелы">
+                </div>
+                
+                <div class="border-l-4 border-pink-200 pl-6 space-y-4">
+                    <h3 class="text-xl font-bold text-pink-500">Специалист по стрессоустойчивости</h3>
+                    <p class="text-md">Демонстрирую абсолютное спокойствие при контакте с «шумным зверем» (пылесосом). Мастер-класс по сохранению достоинства.</p>
+                    <img src="3.jpg" class="experience-media-frame photo-frame" alt="Джей Джей и пылесос">
+                </div>
+            </div>
+        </section>
+
+        <!-- Галерея (Без льва) -->
+        <section id="gallery">
+            <h2 class="text-center text-3xl pink-glow pt-10">Галерея образов 📸</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6">
+                <img src="4.jpg" class="photo-frame w-full h-64 object-cover rounded-2xl" alt="SPA">
+                <img src="5.JPG" class="photo-frame w-full h-64 object-cover rounded-2xl" alt="Аналитик">
+                <img src="6.jpg" class="photo-frame w-full h-64 object-cover rounded-2xl" alt="Чемпион">
+            </div>
+        </section>
+
+        <!-- Похвала -->
+        <section class="text-center space-y-6 py-12">
+            <h2 class="text-2xl font-bold pink-glow">Похвалить Джея:</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <button onclick="boom('❤️')" class="btn-action bg-pink-400 text-white px-8 py-4 rounded-full text-xl font-black shadow-lg hover:bg-pink-500">
+                    Погладить 👋
+                </button>
+                <button onclick="boom('🍎')" class="btn-action bg-yellow-400 text-white px-8 py-4 rounded-full text-xl font-black shadow-lg hover:bg-yellow-500">
+                    Дать вкусняшку 🦴
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        function boom(emoji) {
+            const scalar = 3;
+            const shape = confetti.shapeFromText({ text: emoji, scalar });
+            const count = 150;
+            const defaults = { origin: { y: 0.7 }, shapes: [shape], zIndex: 999 };
+
+            function fire(particleRatio, opts) {
+                confetti(Object.assign({}, defaults, opts, {
+                    particleCount: Math.floor(count * particleRatio)
+                }));
+            }
+
+            fire(0.25, { spread: 26, startVelocity: 55 });
+            fire(0.2, { spread: 60 });
+            fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 });
+            fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 });
+        }
+    </script>
+</body>
+</html>
